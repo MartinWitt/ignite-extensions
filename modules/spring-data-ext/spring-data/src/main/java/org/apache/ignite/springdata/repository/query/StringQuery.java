@@ -807,11 +807,11 @@ class StringQuery implements DeclaredQuery {
 
             switch (type) {
                 case STARTING_WITH:
-                    return String.format("%s%%", value.toString());
+                    return String.format("%s%%", value);
                 case ENDING_WITH:
-                    return String.format("%%%s", value.toString());
+                    return String.format("%%%s", value);
                 case CONTAINING:
-                    return String.format("%%%s%%", value.toString());
+                    return String.format("%%%s%%", value);
                 case LIKE:
                 default:
                     return value;
@@ -934,3 +934,12 @@ class StringQuery implements DeclaredQuery {
         }
     }
 }
+
+
+
+
+
+
+
+
+
